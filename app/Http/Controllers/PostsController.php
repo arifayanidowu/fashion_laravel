@@ -40,7 +40,7 @@ class PostsController extends Controller
             'body' => request('body')
         ]);
 
-        redirect('/posts/display');
+        return redirect('posts/display');
     }
 
     public function show() {
