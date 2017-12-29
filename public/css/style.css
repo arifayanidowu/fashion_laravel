@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Bentham:regular);
+@import url(https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Bungee:regular);
+body {
+    font-family: Bentham;
+    margin: 0;
+    padding: 0;
+}
+
+.align-center {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.align-center a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 10px;
+    color: rgba(116, 99, 99, 0.5);
+    transition: .5s;
+}
+
+.align-center a:hover {
+    color: rgba(13, 13, 87, 0.5);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: .5s;
+}
+
+.container {
+    font-family: Bungee;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    /* border-bottom: 1px solid rgba(233, 52, 52, 0.5); */
+}
+
+.container-fluid {
+    font-size: 3vh;
+    color: rgba(65, 65, 68, 0.5);
+}
+
+.container a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: rgba(241, 233, 233, 0.925);
+    display: inline-block;
+    padding: 10px;
+    transition: .5s;
+}
+
+.container a:hover {
+    color: rgba(248, 28, 28, 0.5);
+}
+
+.img {
+    max-width: 100%;
+}
+
+.fashion a {
+    font-family: Bungee;
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    left: 35%;
+    margin-top: 60vh;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.fashion a:hover {
+    color: #ffffff;
+    transition: all ease-in-out .5s;
+}
+
+.inherit {
+    background-color: rgba(58, 50, 50, 0.13);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    transition: all ease-in-out .5s;
+}
+
+.inherit a {
+    color: rgba(248, 10, 22, 0.87);
+    text-decoration: none;
+}
+
+
+/* CSS for index form */
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+    font-weight: 400;
+}
+
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
