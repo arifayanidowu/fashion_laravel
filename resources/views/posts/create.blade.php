@@ -6,6 +6,10 @@
 
 @include('layout.home-nav')
 
+    
+
+
+        {{--  @include('posts.display')  --}}
 
 
 

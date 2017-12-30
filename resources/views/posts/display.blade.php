@@ -8,10 +8,10 @@
 @extends('posts.create') 
 
 @section('content') 
-
+{{--  
             $posts = Post::find($id);
 
-                @if(count($posts) > 0) 
+                @if(count($posts) > 0)   --}}
 
 
                      @foreach($posts as $post) 
@@ -22,7 +22,7 @@
 
                   @endforeach   
 
-                @endif 
+               {{--   @endif  --}} 
 
 
 @stop  
