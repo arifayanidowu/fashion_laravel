@@ -1,5 +1,5 @@
 <head>
-    <title>{{ $title = 'Login' }}</title>
+    <title>{{ $title = 'Post Message' }}</title>
 </head>
 
 @include('layout.header')

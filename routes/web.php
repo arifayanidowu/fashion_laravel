@@ -20,7 +20,7 @@ Route::get('/tasks/{id}', 'TasksController@show');
 
 /* Route::get('/', 'PostsController@store'); */
 
-Route::get('/posts/create', 'PostsController@create');
+Route::get('/create', 'PostsController@create');
 
 Route::post('/posts', 'PostsController@store');
 
