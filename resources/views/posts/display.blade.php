@@ -12,13 +12,13 @@
                 @if(count($posts) > 0) 
 
 
-                    @foreach($posts as $post)
+                    {{--  @foreach($posts as $post)  --}}
 
-                        <h2>{{ $post->title }}</h2>
+                        <h2>{{ $posts->title }}</h2>
 
-                        <h2>{{ $post->body }}</h2>
+                        <h2>{{ $posts->body }}</h2>
 
-                @endforeach 
+               {{--   @endforeach   --}}
 
                 @endif 
 

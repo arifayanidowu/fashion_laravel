@@ -17,10 +17,10 @@ class PostsController extends Controller
         return view('posts.view', compact('posts'));
     }
 
-    /* public function display(){
+     public function display(){
 
         return view('posts.display');
-    } */
+    } 
 
     public function create() {
         
@@ -33,6 +33,10 @@ class PostsController extends Controller
             'title' => 'required',
             'body' => 'required'
         ]);
+/* 
+        $post = Post::find($id);
+
+        dd($posts); */
 
 
         $posts = Post::create([
