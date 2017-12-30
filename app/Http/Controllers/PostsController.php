@@ -8,23 +8,14 @@ use App\Post;
 
 
 
+
 class PostsController extends Controller
 {
-    public function index(){
+    public function create(){
 
         $posts = Post::all();
 
-        return view('posts.view', compact('posts'));
-    }
-
-     public function display(){
-
-        return view('posts.display');
-    } 
-
-    public function create() {
-        
-        return view('posts.create');
+        return view('posts.create', compact('posts'));
     }
 
     public function store() {
@@ -33,24 +24,20 @@ class PostsController extends Controller
             'title' => 'required',
             'body' => 'required'
         ]);
-/* 
-        $post = Post::find($id);
-
-        dd($posts); */
-
 
         $posts = Post::create([
             'title' => request('title'),
             'body' => request('body')
         ]);
 
-        return view('posts.display', compact('this','posts'));
+        return redirect('/display')->with('this','posts');
     }
 
-    public function show() {
-        $posts = Post::all();
+     public function show() {
+        
+        $post = Post::select('select * from posts');
 
-        return view('posts.display', compact('posts'));
-    }
+        return view('posts.display', compact('post'));
+    } 
 }
 

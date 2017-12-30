@@ -26,7 +26,7 @@ Route::get('/create', 'PostsController@create');
 
 Route::post('/posts', 'PostsController@store');
 
-Route::get('/posts', 'PostsController@show');
+Route::get('/display', 'PostsController@show');
 
 
 
